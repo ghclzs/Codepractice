@@ -17,8 +17,9 @@ public class SearchRepeatArr {
         }
         return -1;
     }
+    //这种方法没用
     public int searchRepeatArr2(int[] arr){
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i <= arr.length; i++) {
             if(arr[arr[i]]==arr[i]){
                 return arr[i];
             }
@@ -27,7 +28,7 @@ public class SearchRepeatArr {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1,2,3,3,4,5,6,7,7,7,7,};
+        int[] arr = {2,3,1,0,2,5,3};
         SearchRepeatArr searchRepeatArr = new SearchRepeatArr();
         int result = searchRepeatArr.searchRepeatArr2(arr);
         System.out.println(result);

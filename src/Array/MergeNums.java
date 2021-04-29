@@ -20,6 +20,8 @@ public class MergeNums {
                 newarr[k++] = num2[j++];
             }
         }
+        System.out.println(Arrays.toString(newarr));
+        System.out.println(i+"==="+j);
         while (i<m){
             newarr[k++] = num1[i++];
         }
